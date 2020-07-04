@@ -184,3 +184,8 @@ inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
 if (has('win32') || has('win64'))
    set renderoptions=type:directx
 endif
+
+" Custom for enabling a Patched Nerd Font Version of Code New Roman
+" Only changes the font in gvim
+" https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/CodeNewRoman/Regular/complete/Code%20New%20Roman%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.otf
+set guifont=CodeNewRoman_NF:h11:cANSI:qDRAFT
