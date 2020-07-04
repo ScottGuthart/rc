@@ -1,5 +1,6 @@
-" plugins
-
+" Miguel Grinberg
+" https://gist.github.com/miguelgrinberg/527bb5a400791f89b3c4da4bd61222e4
+" modified for Windows Support
 call plug#begin()
 Plug 'tpope/vim-sensible'
 Plug 'itchyny/lightline.vim'
@@ -165,8 +166,9 @@ imap <C-v> <ESC>"+pa
 
 " disable autoindent when pasting text
 " source: https://coderwall.com/p/if9mda/automatically-set-paste-mode-in-vim-when-pasting-in-insert-mode
-let &t_SI .= "\<Esc>[?2004h"
-let &t_EI .= "\<Esc>[?2004l"
+" Commented out below -- doesn't work on windows
+" let &t_SI .= "\<Esc>[?2004h"
+" let &t_EI .= "\<Esc>[?2004l"
 
 function! XTermPasteBegin()
     set pastetoggle=<Esc>[201~
@@ -175,3 +177,10 @@ function! XTermPasteBegin()
 endfunction
 
 inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
+
+" New Stuff
+" Eduardo Aranda from Vim Telegram Channel
+" in windows, set render option for ligatures <> != >= <=
+if (has('win32') || has('win64'))
+   set renderoptions=type:directx
+endif
