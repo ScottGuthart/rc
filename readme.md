@@ -27,7 +27,11 @@ They're pretty heavily commented to make it easy for you to modify for your need
     ```powershell
     New-Item -ItemType SymbolicLink -Path "~/.vimrc" -Target "~/rc/.vimrc"
     ```
-4. YouCompleteMe Install (Optional) **cmd** as administrator
+4. Startup vim. Install plugins.
+    ```
+    :PlugInstall
+    ```
+5. YouCompleteMe Install (Optional) **cmd** as administrator
     * ```shell
        dir %USERPROFILE%/vimfiles/plugged/YouCompleteMe
     * Compile YouCompleteMe
