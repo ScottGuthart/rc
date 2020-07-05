@@ -27,10 +27,14 @@ They're pretty heavily commented to make it easy for you to modify for your need
     ```powershell
     New-Item -ItemType SymbolicLink -Path "~/.vimrc" -Target "~/rc/.vimrc"
     ```
-4. YouCompleteMe Install (Optional) cmd as administrator
+4. YouCompleteMe Install (Optional) **cmd** as administrator
     * ```shell
-       cd %USERPROFILE%/vimfiles/plugged/YouCompleteMe
-    * [compile](https://github.com/ycm-core/YouCompleteMe#windows)
+       dir %USERPROFILE%/vimfiles/plugged/YouCompleteMe
+    * Compile YouCompleteMe
+        ```shell
+        python3 install.py --all
+        ```
+        * [If you run into trouble](https://github.com/ycm-core/YouCompleteMe#windows)
 
 # Ubuntu
 1. Vim should already be installed
