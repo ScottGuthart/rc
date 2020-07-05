@@ -8,7 +8,9 @@ They're pretty heavily commented to make it easy for you to modify for your need
 # Windows
 ## Vim
 1. Install Vim
-    * Note, to use autocompletion via the YouCompleteMePlugin
+    * Note, to use autocompletion via the YouCompleteMePlugin (optional)
+        * Uncomment out YouCompleteMe Lines in .vimrc by removing leading ```"```
+            * There are a couple spots to do this. Search the file for YouCompleteMe to find them
         * Install [choco](https://chocolatey.org/install)
         * Use choco in powershell as an adminstrator:
             ```powershell
@@ -32,6 +34,7 @@ They're pretty heavily commented to make it easy for you to modify for your need
 
 # Ubuntu
 1. Vim should already be installed
-2. ```shell
+2. Create a symbolic link in your home directory to this repo's .vimrc
+    ```shell
     ln -s ~/rc/.vimrc ~/.vimrc
     ```

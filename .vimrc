@@ -29,7 +29,7 @@ Plug 'pangloss/vim-javascript'
 " Plugins added by Scott
 Plug 'tmhedberg/SimpylFold' " for simpler folding
 Plug 'vim-scripts/indentpython.vim' " for better indenting in python
-Plug 'Valloric/YouCompleteMe' " python autocomplete
+" Plug 'Valloric/YouCompleteMe' " python autocomplete
 Plug 'nvie/vim-flake8' " python syntax support
 Plug 'ctrlpvim/ctrlp.vim' " fuzzy search with ctrl+p
 call plug#end()
@@ -244,5 +244,5 @@ au BufNewFile,BufRead *.js, *.html, *.css
 let g:SimpylFold_docstring_preview=1
 
 " YouCompleteMe
-let g:ycm_autoclose_preview_window_after_completion=1
-map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+" let g:ycm_autoclose_preview_window_after_completion=1
+" map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
