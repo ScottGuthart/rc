@@ -9,17 +9,17 @@ They're pretty heavily commented to make it easy for you to modify for your need
 ## Vim
 1. Install Vim
     * Note, to use autocompletion via the YouCompleteMePlugin
-    * Install [choco](https://chocolatey.org/install)
-    * Use choco in powershell as an adminstrator:
-        ```powershell
-        choco install vim
-        choco install cmake
-        choco install python3
-        choco install golang
-        choco install nodejs.install
-        choco install visualstudio2019buildtools
-        choco install visualstudio2019-workload-vctools
-        ```
+        * Install [choco](https://chocolatey.org/install)
+        * Use choco in powershell as an adminstrator:
+            ```powershell
+            choco install vim
+            choco install cmake
+            choco install python3
+            choco install golang
+            choco install nodejs.install
+            choco install visualstudio2019buildtools
+            choco install visualstudio2019-workload-vctools
+            ```
 2. Install [vim-plug](https://github.com/junegunn/vim-plug)
 3. Create symbolic link to vimrc (in powershell as an adminstrator)
     ```powershell
