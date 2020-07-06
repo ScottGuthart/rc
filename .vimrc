@@ -244,6 +244,13 @@ au BufNewFile,BufRead *.js, *.html, *.css
 " See docstrings when folded
 let g:SimpylFold_docstring_preview=1
 
-" YouCompleteMe
-" let g:ycm_autoclose_preview_window_after_completion=1
-" map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+" Jedi Vim
+" Defaults for Reference/Modification
+let g:jedi#goto_command = "<leader>d"
+let g:jedi#goto_assignments_command = "<leader>g"
+let g:jedi#goto_stubs_command = "" " not bound because of conflict with our syntastic binding
+let g:jedi#goto_definitions_command = ""
+let g:jedi#documentation_command = "K"
+let g:jedi#usages_command = "<leader>n"
+let g:jedi#completions_command = "<C-Space>"
+let g:jedi#rename_command = "<leader>r"
