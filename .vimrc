@@ -30,7 +30,6 @@ Plug 'pangloss/vim-javascript'
 Plug 'tmhedberg/SimpylFold' " for simpler folding
 Plug 'vim-scripts/indentpython.vim' " for better indenting in python
 " Plug 'Valloric/YouCompleteMe' " python autocomplete
-Plug 'nvie/vim-flake8' " python syntax support
 Plug 'ctrlpvim/ctrlp.vim' " fuzzy search with ctrl+p
 Plug 'davidhalter/jedi-vim' " autocomplete for python
 call plug#end()
@@ -234,6 +233,7 @@ au BufNewFile,BufRead *.py
     \ set expandtab |
     \ set autoindent |
     \ set fileformat=unix
+" autocmd BufWritePost *.py call flake8#Flake8() check flake8 every write
 " Frontend Web Development
 au BufNewFile,BufRead *.js, *.html, *.css
     \ set tabstop=2 |
