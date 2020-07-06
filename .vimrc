@@ -29,10 +29,9 @@ Plug 'pangloss/vim-javascript'
 " Plugins added by Scott
 Plug 'tmhedberg/SimpylFold' " for simpler folding
 Plug 'vim-scripts/indentpython.vim' " for better indenting in python
-" Plug 'Valloric/YouCompleteMe' " python autocomplete
-Plug 'nvie/vim-flake8' " python syntax support
 Plug 'ctrlpvim/ctrlp.vim' " fuzzy search with ctrl+p
 Plug 'davidhalter/jedi-vim' " autocomplete for python
+Plug 'tpope/vim-commentary' " better comments. see bottom for usage
 call plug#end()
 
 filetype plugin indent on
@@ -254,3 +253,9 @@ let g:jedi#documentation_command = "K"
 let g:jedi#usages_command = "<leader>n"
 let g:jedi#completions_command = "<C-Space>"
 let g:jedi#rename_command = "<leader>r"
+
+" Vim Commentary
+" Use gcc to comment out a line (takes a count), 
+" gc to comment out the target of a motion 
+" (for example, gcap to comment out a paragraph)
+" gc in visual mode to comment out the selection
