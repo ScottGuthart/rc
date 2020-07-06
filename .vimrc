@@ -32,6 +32,7 @@ Plug 'vim-scripts/indentpython.vim' " for better indenting in python
 " Plug 'Valloric/YouCompleteMe' " python autocomplete
 Plug 'nvie/vim-flake8' " python syntax support
 Plug 'ctrlpvim/ctrlp.vim' " fuzzy search with ctrl+p
+Plug 'davidhalter/jedi-vim' " autocomplete for python
 call plug#end()
 
 filetype plugin indent on
